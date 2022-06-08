@@ -1,0 +1,40 @@
+@import "../../assets/scss/app.scss";
+
+$font_size: 15px;
+
+.search-product {
+  margin: auto;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  input {
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid $color_border;
+    padding: 0 15px 0;
+  }
+  button {
+    height: 40px;
+    width: 150px;
+    border: 0;
+    border-radius: 2px;
+    background: $color_button_submit;
+    font-size: $font_size;
+    color: $color_white;
+    text-align: center;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+  .form {
+    position: relative;
+    text-align: center;
+    &-icon {
+      border: 1px;
+      position: absolute;
+      right: 10%;
+      padding-top: 5px;
+    }
+  }
+}

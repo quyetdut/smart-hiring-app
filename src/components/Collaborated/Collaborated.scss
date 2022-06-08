@@ -1,0 +1,25 @@
+@import "../../assets/scss/app.scss";
+
+.collaborated {
+  margin: 0 20px 0;
+  border-top: 1px solid $color_gray_border;
+  &-top {
+    margin: 28px 59px 73px 50px;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-size: 18px;
+      line-height: 26px;
+      color: #00808d;
+    }
+    .point {
+      font-size: 18px;
+      line-height: 160%;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  .row {
+    margin: 0 47px 38px 34px;
+  }
+}

@@ -1,0 +1,130 @@
+@import "../../assets/scss/app.scss";
+
+.ctn-item {
+  width: 100%;
+  .item {
+    display: flex;
+    align-items: center;
+    .rectangle {
+      width: 100%;
+      height: 15px;
+      margin-bottom: 2px;
+      margin-left: 4px;
+    }
+    .orange {
+      background: $color_blue;
+    }
+    .gray {
+      background-color: $color_light_blue;
+    }
+  }
+}
+
+.ctn-capability {
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    /* or 32px */
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .capability {
+    border: 1px solid $bg_light_gray;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    margin-left: 30px;
+
+    @include lg-boostrap-width {
+      margin-left: 0px;
+    }
+
+    .inside {
+      display: flex;
+      flex-direction: column;
+      padding-top: 58px;
+      .capabilityBar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 43px;
+
+        &__label {
+          flex: 1;
+          text-align: end;
+          padding-right: 40px;
+        }
+
+        &__bar {
+          flex: 3;
+        }
+
+        &__point {
+          flex: 1;
+          padding-left: 57px;
+        }
+
+        @include md-capabilities-width {
+          &__label {
+            .boxSpan {
+              width: 100px;
+            }
+          }
+        }
+
+        @include tablet {
+          &__label {
+            padding-right: 30px;
+            .boxSpan {
+              width: 100px;
+            }
+          }
+
+          &__point {
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+    .button_top {
+      float: right;
+      margin-left: 10px;
+      border: 0;
+      margin: 26px 23px 0 0;
+      color: $color_font_base;
+
+      @include tablet {
+        margin: 16px 13px 0 0;
+      }
+
+      img {
+        height: 24px;
+        width: 24px;
+
+        @include tablet {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+    .button_bottom {
+      cursor: pointer;
+      padding: 4px 24px 4px 24px;
+      border: 0;
+      border-radius: 18px;
+      background-color: $color_bg_content;
+      font-size: 10px;
+      margin: auto;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $color_gray_addmore_btn;
+    }
+  }
+}

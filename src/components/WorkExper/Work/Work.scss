@@ -1,0 +1,25 @@
+@import "../../../assets/scss/app.scss";
+@import "../../../assets/scss/foundation/variable/variable";
+
+.work-exper {
+  width: 100%;
+  min-height: 400px;
+  max-height: max-content;
+  margin-bottom: 80px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+
+  &__space {
+    flex: 1;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}

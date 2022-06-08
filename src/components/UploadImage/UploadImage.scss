@@ -1,0 +1,27 @@
+@import "../../assets/scss/app.scss";
+
+.upload-image {
+
+  margin-top: 39px;
+
+  &-review {
+    width: 83px;
+    height: 65px;
+    object-fit: cover;
+  }
+
+  .btn-upload-image {
+    width: 100%;
+    border: 1px dashed $color_gray_plus;
+    padding: 8px 0;
+    border-radius: 2px;
+    margin-left: 15px;
+    cursor: pointer;
+
+    &-text {
+      color: $color_gray;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

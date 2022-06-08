@@ -1,0 +1,118 @@
+@import "../../assets/scss/foundation/variable/variable";
+
+.modal-info-person {
+  &-style {
+    margin: 0 auto;
+  }
+  &-content {
+    background-color: $color_blue_dark;
+    color: $color_bg_content;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: $font-family-base;
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+      color: $color_white;
+    }
+    .SingleSelectField_selectValue__axTv5 {
+      color: #494950;
+    }
+    .custom-select-wrapper {
+      .custom-select__control {
+        height: 31px;
+        min-height: auto;
+        border-style: none;
+      }
+      .custom-select__value-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      .custom-select__placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        top: 40%;
+        color: #998c8c;
+      }
+      .custom-select__option {
+        color: $color_primary;
+        font-size: 0.875rem;
+      }
+      .custom-select__single-value {
+        top: 40%;
+        font-size: 0.875rem;
+      }
+      .custom-select__indicator-separator {
+        display: none;
+      }
+    }
+  }
+  &-title {
+    margin: 30px 15px 0px;
+  }
+  &-form {
+    margin: 50px 170px;
+    ::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      top: 40%;
+      color: #998c8c;
+    }
+    .form-label {
+      font-weight: 600;
+      font-size: 14px;
+      font-family: $font-family-base;
+      color: $color_white;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .errors {
+      color: $color_error;
+      font-size: 12px;
+    }
+  }
+  &-button {
+    background: $color_button_submit !important;
+    color: $color_white !important;
+    padding: 5px 30px !important;
+    border: none !important;
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus,
+    &:active {
+      // border-color: $color_orange !important;
+      // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px $color_orange !important;
+      outline: 0 none;
+    }
+
+    &-close {
+      line-height: 28px;
+      color: white;
+      background: none;
+      border: none;
+      font-size: 3rem;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  &-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  &-text-right {
+    line-height: 40px;
+  }
+
+  @media only screen and (max-width: $desktop-width) {
+    &-form {
+      max-width: 430px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}

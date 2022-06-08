@@ -1,0 +1,74 @@
+@import "../../assets/scss/app.scss";
+
+.create-project {
+  padding: 40px 80px;
+  width: 100%;
+
+  &-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 75px;
+  }
+
+  .btn-next {
+    background: $color_button_submit;
+    color: $color_white;
+  }
+
+  .btn-back {
+    border: 1px solid $color_blue !important;
+    color: $color_blue;
+    background-color: $color_white;
+  }
+
+  .btn-nav {
+    min-width: 140px;
+    height: 40px;
+    padding: 13px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ic-next {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    &:before {
+      content: url("../../assets/images/icons/arrow-right.svg");
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .ic-back {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: $color_blue;
+    -webkit-mask: url("../../assets/images/icons/arrow-left.svg") no-repeat center;
+    mask: url("../../assets/images/icons/arrow-left.svg") no-repeat center;
+
+    // &:before {
+    //   content: url("../../assets/images/icons/arrow-left.svg");
+    //   width: 30px;
+    //   height: 30px;
+    // }
+  }
+
+  .btn-link-back {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  @include desktop {
+    padding: 40px 20px;
+  }
+}

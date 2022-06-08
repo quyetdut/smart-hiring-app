@@ -1,0 +1,58 @@
+@import "../../assets/scss/app.scss";
+@import "../../assets/scss/foundation/variable/variable";
+
+.work-exper-wrapper {
+  width: 100%;
+
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    /* or 32px */
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .work-exper-parent {
+    margin-left: 30px;
+    border: 1px solid $bg_light_gray;
+    border-radius: 2px;
+    padding: 30px 10px 30px 100px;
+
+    position: relative;
+    z-index: 1;
+
+    .button_top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+
+      border: 0;
+      margin: 0 40px 0 0;
+      color: $color_font_base;
+      background-color: transparent;
+
+      @include tablet {
+        margin: 16px 13px 0 0;
+      }
+
+      img {
+        height: 24px;
+        width: 24px;
+
+        @include tablet {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+
+    @include desktop {
+      margin: 0px;
+      padding: 30px 10px 30px 20px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../assets/scss/app.scss";
+
+.rectangle {
+  height: 80px;
+  // border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  &-img {
+    margin: 20px 0 20px 18px;
+    width: 40px;
+    height: 40px;
+    img {
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+@import "../../assets/scss/foundation/variable/variable";
+
+.modal-edit-persona {
+  color: $color_bg_content;
+
+  &-style {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &-body {
+    background-color: #282830;
+    color: $color_bg_content;
+    h5 {
+      font-size: 20px;
+      color: $color_white;
+    }
+
+    .btn-primary {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      &:focus {
+        box-shadow: 0 0 0 transparent;
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      &:active {
+        background-color: transparent !important;
+        border-color: transparent !important;
+      }
+
+      &:focus:active {
+        box-shadow: 0 0 0 0.2rem $color_orange !important;
+      }
+    }
+  }
+
+  &-header {
+    div {
+      text-align: center;
+      font-weight: bold;
+    }
+    &-info-importance {
+      display: inline-block;
+      width: 18px;
+      height: 16px;
+      background-color: white;
+      border-radius: 20px;
+      color: black;
+      line-height: 15px;
+      margin-left: 5px;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  .header-tooltip {
+    
+  }
+
+  &-sub {
+    margin: 30px 30px 0px 0px !important;
+
+    .group-edit-input {
+      font-size: 12px;
+      text-align: center;
+      // transform: translateY(-25%);
+    }
+    .persona {
+      text-align: right;
+    }
+
+    .icon-persona {
+      margin-top: 5px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .label-persona {
+      transform: translateY(30%);
+      line-height: 1;
+    }
+    .selects-persona {
+      transform: translateY(40%);
+      z-index: 10;
+      color: #494950;
+    }
+    .selects-persona-error {
+      transform: translateY(85%);
+    }
+    input.form-control {
+      text-align: center;
+      border-radius: 2px;
+    }
+
+    .errors {
+      color: $color_error;
+      font-size: 12px;
+      margin: 4px 0 0 0;
+    }
+  }
+
+  &-button {
+    background: $color_button_submit;
+    color: $color_white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  &-selections {
+    margin-bottom: 100px;
+    margin-top: 55px;
+    .css-n9lsfx-menu {
+      background-color: #282830;
+    }
+  }
+
+  &-group {
+    .label-capability {
+      text-align: right;
+      font-size: 20px;
+      @media only screen and (max-width: $sm-width) {
+        text-align: center;
+      }
+    }
+
+    ol,
+    ul {
+      padding-left: 0px;
+    }
+
+    .btn-subtraction {
+      line-height: 0px;
+    }
+
+    .btn-summation {
+      transform: translate(0px, -5px);
+      @media only screen and (max-width: $sm-width) {
+        transform: translate(0px, 5px);
+      }
+    }
+
+    .ctn-item {
+      transform: translate(0px, 8px);
+    }
+
+    .capability-point {
+      font-size: 20px;
+      transform: translate(0px, -2px);
+      @media only screen and (max-width: $sm-width) {
+        display: none;
+      }
+    }
+    .importance-point {
+      transform: translate(20px, 0);
+    }
+
+    .importance-point-value {
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}

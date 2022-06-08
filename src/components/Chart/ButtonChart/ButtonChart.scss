@@ -1,0 +1,22 @@
+@import "assets/scss/app.scss";
+
+.button {
+  min-width: 100px;
+  height: 32px;
+  font-family: "Toyota";
+  line-height: 24px;
+  font-size: 14px;
+  border-radius: 2px;
+  margin: 0px 6px;
+}
+.white {
+  background-color: white;
+  color: $color_text;
+  border: 1px solid $color_text;
+}
+
+.blue {
+  background-color: $color_blue;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,245 @@
+@import "../../assets/scss/app.scss";
+
+.communication {
+  width: 100%;
+  height: 100vh;
+  background: $color_bg_chat;
+  padding-top: 38px;
+  padding-bottom: 64px;
+  display: flex;
+  ul {
+    padding: 0;
+  }
+
+  .content {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    // padding-right: 8%;
+    padding-right: 35px;
+    width: 100%;
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+    .message-input {
+      width: 100%;
+      border-top: 1px solid #cecfd0;
+      input {
+        border: none;
+        border-radius: 16px;
+        height: 60px;
+        width: calc(100% - 90px);
+        padding: 11px 32px 10px 30px;
+        font-size: 15px;
+        line-height: 21px;
+        background: $color_type_msg;
+        margin: 20px 20px 0 40px;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        border: none;
+        width: 30px;
+        height: 26px;
+        cursor: pointer;
+        background: none;
+      }
+    }
+
+    .no-content {
+      width: 50%;
+      text-align: center;
+
+      //center a div
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media screen and (max-width: $xl-width) {
+  .communication {
+    .content {
+      .matching-header {
+        .first {
+          .name {
+            font-size: calc(14px + 7 * ((100vw - 400px) / 1300));
+            line-height: 20px;
+            margin-top: 10px;
+          }
+          .persona {
+            font-size: calc(10px + 7 * ((100vw - 400px) / 1300));
+          }
+          .txt {
+            margin-left: 60px;
+          }
+          .image {
+            width: 50px;
+          }
+        }
+        .second {
+          .btn-collab {
+            height: 30px;
+            width: auto;
+            font-size: 12px;
+            padding: 5px;
+            margin: 5px;
+          }
+          .project {
+            font-size: calc(12px + 7 * ((100vw - 400px) / 1300));
+            line-height: 24px;
+          }
+          .match {
+            font-size: calc(10px + 7 * ((100vw - 400px) / 1300));
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $lg-width) {
+  .matching-header {
+    .persona {
+      display: none;
+    }
+    .second {
+      .ctn {
+        flex-direction: column;
+        .ctn-text {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $tablet-width) {
+  .communication {
+    padding-bottom: 50px;
+    .sidepanel {
+      width: 58px;
+      min-width: 58px;
+      .contacts {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        ul {
+          li.contact {
+            // padding: 6px 0 46px 8px;
+            padding: 8px;
+            .wrap {
+              width: 100%;
+              .avatar {
+                width: 40px;
+                height: 40px;
+                img {
+                  margin-right: 0px;
+                }
+              }
+              .meta {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      width: calc(100% - 58px);
+      min-width: 58px;
+      .matching-header {
+        p {
+          width: 100%;
+          white-space: pre-wrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+        }
+        .first {
+          .name {
+            font-size: 18px;
+          }
+          .persona {
+            display: block;
+          }
+        }
+
+        .second {
+          .ctn {
+            flex-direction: row;
+          }
+          .project {
+            font-size: 16px;
+          }
+          .match {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .messages {
+      max-height: calc(100% - 145px);
+    }
+    .message-input {
+      .wrap {
+        input {
+          padding: 15px 32px 16px 8px;
+        }
+        button {
+          padding: 16px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $sm-width) {
+  .communication {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 40px;
+    .content {
+      .matching-header {
+        .first {
+          .image {
+            width: 40px;
+          }
+          .txt {
+            margin-left: 50px;
+            top: 60%;
+          }
+          .name {
+            font-size: 16px;
+          }
+        }
+        .second {
+          .ctn {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet-width) {
+  .communication {
+    .content {
+      .messages {
+        ul {
+          li {
+            p {
+              max-width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

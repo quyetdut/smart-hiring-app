@@ -1,0 +1,88 @@
+@import "../../../assets/scss/app.scss";
+
+.create-first-project {
+  .create-first-project-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .lb-text-field {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $color_text;
+    }
+
+    .lb-radio {
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 50px;
+      span {
+        margin-left: 8px;
+      }
+    }
+
+    .input-text-field {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      color: $color_black;
+      background-color: $bg_input;
+    }
+
+    .form-check-label {
+      font-size: 16px;
+      line-height: 23px;
+      color: $color_text;
+    }
+
+    .checkbox input {
+      display: none;
+    }
+    .checkbox input:checked + label {
+      font-size: 16px;
+      line-height: 23px;
+      color: $color_text;
+    }
+
+    .checkbox input:checked + label i {
+      background-image: url("../../../assets/images/icons/radio-select.svg");
+    }
+
+    .group-radio {
+      [type="radio"]:checked {
+        width: 20px;
+        height: 20px;
+        -webkit-appearance: none;
+        background-image: url("../../../assets/images/icons/radio-select.svg");
+      }
+
+      [type="radio"] {
+        width: 20px;
+        height: 20px;
+        -webkit-appearance: none;
+        background-image: url("../../../assets/images/icons/radio-normal.svg");
+      }
+    }
+
+    .text-area {
+      padding: 13px;
+      background-color: $bg_input;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .date-picker-items {
+    width: 290px;
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  .errors {
+    color: $color_error;
+    font-size: 12px;
+    margin: 4px 0 0 0;
+  }
+}

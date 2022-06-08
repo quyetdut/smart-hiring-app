@@ -1,0 +1,37 @@
+.matchRadarChart {
+  display: flex;
+  transform: translateY(-5%);
+}
+
+.c2 {
+  margin-top: -15px;
+  .chart-note {
+    transform: translate(-37%, 22.5%);
+  }
+}
+
+.c3 {
+  margin-top: 25px;
+  .chart-note {
+    transform: translate(-119%, 0%);
+  }
+}
+
+.c4 {
+  margin-top: 50px;
+  .chart-note {
+    transform: translate(-118%, -5%);
+  }
+}
+
+.button-chart {
+  text-align: center;
+}
+.size425 {
+  margin: -45px 0 0 0;
+  transform: translateX(-8%);
+}
+.size523 {
+  margin: -91px 0 0 0;
+  transform: translateX(-9%);
+}

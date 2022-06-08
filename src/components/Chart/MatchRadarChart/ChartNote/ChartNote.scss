@@ -1,0 +1,29 @@
+@import "assets/scss/app";
+
+.chart-note {
+  max-height: fit-content;
+  .note {
+    display: flex;
+    align-items: center;
+
+    &-key {
+      display: inline;
+      box-sizing: border-box;
+      width: 80px;
+      height: 18px;
+      margin-bottom: 13px;
+      transform: translateY(-1px);
+      color: $color_project_completion_text;
+    }
+
+    &-color {
+      display: inline;
+      box-sizing: border-box;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      margin-left: 1px;
+      opacity: 0.6;
+    }
+  }
+}

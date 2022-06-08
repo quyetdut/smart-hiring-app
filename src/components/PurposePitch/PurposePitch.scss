@@ -1,0 +1,33 @@
+@import "assets/scss/app.scss";
+
+.purpose-pitch {
+  &-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 15px;
+    color: $color_text;
+    margin-bottom: 29px;
+  }
+  &-body {
+    // max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+
+    padding: 0px 15px 0px 30px;
+  }
+
+  @media only screen and (max-width: $tablet-width) {
+    .purpose-pitch-body {
+      padding: 0px 5px 0px 20px;
+    }
+  }
+  @media only screen and (max-width: $mobile-width) {
+    .purpose-pitch-body {
+      padding: 0px 5px 0px 10px;
+    }
+  }
+}

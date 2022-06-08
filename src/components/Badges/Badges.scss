@@ -1,0 +1,99 @@
+@import "assets/scss/app.scss";
+
+.badges-section {
+  .badges-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: $color_black;
+    margin-bottom: 25px;
+  }
+
+  .badges-wrapper {
+    display: flex;
+    border: 1px solid #d2d2d2;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 23px 35px 50px 35px;
+    margin-left: 30px;
+
+    @include lg-boostrap-width {
+      margin-left: 0px;
+    }
+
+    .certifications {
+      flex: 4;
+
+      &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+        color: $color_text;
+        margin-bottom: 14px;
+      }
+
+      &-description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color_text;
+        &-item {
+          list-style: circle;
+          margin-bottom: 5px;
+        }
+        .certifications-remove {
+          cursor: pointer;
+          display: inline-block;
+          margin-left: 16px;
+          margin-right: 10px;
+        }
+        .certifications-remove :hover {
+          opacity: 70%;
+        }
+      }
+    }
+
+    .community {
+      flex: 5;
+      display: flex;
+      align-items: center;
+      .vertical-line {
+        background: $color_vertical-line;
+        width: 1px;
+        height: 130px;
+      }
+
+      .community-wrapper {
+        padding-left: 49px;
+
+        .community-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 23px;
+          color: $color_text;
+          margin-bottom: 14px;
+        }
+
+        .community-icon {
+          cursor: pointer;
+          margin-bottom: 14px;
+          width: 80px;
+          height: 80px;
+        }
+
+        .community-description {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          // text-align: center;
+          color: $color_text;
+        }
+      }
+    }
+  }
+}

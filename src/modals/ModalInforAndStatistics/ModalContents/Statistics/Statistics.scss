@@ -1,0 +1,21 @@
+@import "../../../../assets/scss/app.scss";
+
+.statistics {
+  width: 100%;
+
+  &__infor {
+    margin-bottom: 15px;
+  }
+
+  &__specification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+}

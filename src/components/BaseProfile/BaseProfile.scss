@@ -1,0 +1,228 @@
+@import "../../assets/scss/app.scss";
+
+.baseProfile__general {
+  display: flex;
+  padding-top: 58px;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.baseProfile__top {
+  display: flex;
+  width: 100%;
+  @include tablet {
+    text-align: center;
+  }
+
+  .topLeft {
+    &__name {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &_place {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .jobText {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      /* Main Bodytext 282830 */
+
+      color: #282830;
+    }
+  }
+
+
+  .topRight {
+    margin-top: 10px;
+
+  }
+
+  .location {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 6px 0 10px 0;
+    .locationIcon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+
+}
+
+.addressAndTime {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.baseProfile__middle {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .middleLeft {
+    // width: 100%;
+    flex: 1;
+
+    .rankingBar {
+      display: flex;
+      max-width: 260px;
+      &__point {
+        margin-right: 4px;
+        width: 100%;
+        height: 22px;
+
+        &--one {
+          background: #EDE0C0;
+          border: 1px solid #EACFA8;
+          box-sizing: border-box;
+        }
+  
+        &--two {
+          background: white;
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--three {
+          
+          background: white;
+          border: 1px solid #EACFA8;
+          box-sizing: border-box;
+        }
+  
+        &--four {
+        
+          background: white;
+          border: 1px solid #EACFA8;
+          box-sizing: border-box;
+        }
+  
+        &--five {
+        
+          background: white;
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--six {
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--seven {
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--eight {
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--nine {
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+  
+        &--ten {
+          height: 22px;
+          border: 1px solid #EDE0C0;
+          box-sizing: border-box;
+        }
+      }
+
+      
+
+    }
+
+    .middleLeft_text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      /* identical to box height */
+      color: #979797;
+    }
+  }
+
+  .middle_right {
+    width: 53px;
+    height: 55px;
+    background: #EDE0C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+    .racingIcon {
+      width: 25px;
+      height: 25px;
+    }
+
+    div {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+
+      color: #575757;
+    }
+  }
+}
+
+.baseProfile__avatar {
+  margin-right: 30px;
+  @include tablet {
+    margin-right: 0;
+    padding-bottom: 10px;
+  }
+  .jobImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+    .jobIcon {
+      width: 197px;
+      height: 197px;
+    }
+  }
+
+}
+
+.button_top {
+  float: right;
+  border: 0;
+  margin: 26px 23px 0 0;
+
+  @include tablet {
+    margin: 16px 13px 0 0;
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+
+    @include tablet {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}

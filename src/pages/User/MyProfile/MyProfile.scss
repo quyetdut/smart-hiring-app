@@ -1,0 +1,83 @@
+@import "/src/assets/scss/app.scss";
+
+.myProfile {
+  padding: 50px;
+  width: 100%;
+
+  @include mobile {
+    padding: 50px 20px 0 20px;
+  }
+  .back-project {
+    font-size: 16px;
+    line-height: 23px;
+    color: $color_project_completion_text;
+    cursor: pointer;
+  }
+  &__awards {
+    margin-bottom: 46px;
+    margin-right: 35px;
+
+    @include desktop {
+      margin-right: 0px;
+    }
+
+    @include lg-boostrap-width {
+      flex-direction: column;
+
+      .baseProfile {
+        margin-bottom: 47px;
+      }
+    }
+
+    .baseProfile {
+      flex: 3;
+      display: flex;
+      padding-top: 30px;
+
+      @include desktop {
+        flex: 1;
+      }
+    }
+
+    .awardsWrapper {
+      flex: 5;
+      padding-left: 70px;
+      margin-right: 35px;
+      @include desktop {
+        flex: 3;
+        padding-left: 30px;
+        margin-right: 0px;
+      }
+
+      @include lg-boostrap-width {
+        padding-left: 0px;
+      }
+    }
+  }
+
+  &__badges {
+    margin-bottom: 46px;
+    margin-right: 35px;
+
+    @include desktop {
+      margin-right: 0px;
+    }
+  }
+
+  &__capabilities {
+    margin-bottom: 50px;
+    margin-right: 35px;
+
+    @include desktop {
+      margin-right: 0px;
+    }
+  }
+  &__workExperience {
+    margin-bottom: 50px;
+    margin-right: 35px;
+
+    @include desktop {
+      margin-right: 0px;
+    }
+  }
+}

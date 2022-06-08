@@ -1,0 +1,44 @@
+@import "../../../assets/scss/foundation/variable/variable";
+
+.project-group {
+  .header {
+    > * {
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    margin-bottom: 16px;
+
+    .amount {
+      height: 32px;
+
+      transform: translate(0, -7%);
+      margin-left: 15px;
+      border-radius: 5px;
+      line-height: 29px;
+      font-size: 15px;
+      text-align: center;
+      color: white;
+    }
+    .active {
+      background-color: $amount_color_active;
+    }
+
+    .inactive {
+      background-color: $amount_color_inactive;
+    }
+  }
+  .projects {
+    &-text-default {
+      overflow: hidden;
+      line-height: 20px;
+      font-style: italic;
+      color: gray;
+      font-size: 14px;
+    }
+  }
+}

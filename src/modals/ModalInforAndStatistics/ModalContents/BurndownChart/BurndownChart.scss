@@ -1,0 +1,65 @@
+@import "../../../../assets/scss/app.scss";
+
+.burndownChart {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      color: #484848;
+    }
+  }
+  
+  .chartWrapper {
+    display: flex;
+    @include lg-boostrap-width {
+      flex-direction: column;
+    }
+
+    .chartContent {
+      flex: 4;
+
+      .chart {
+        width: 100%;
+        padding-left: 10px;
+      }
+    }
+
+    .legend {
+      flex: 1;
+      margin-left: 10px;
+      min-width: 170px;
+      margin-top: auto;
+      margin-bottom: auto;
+      @include lg-boostrap-width {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .line {
+        margin-bottom: 10px;
+        display: flex;
+
+        img{
+          width: 40px;
+          margin-right: 10px;
+        }
+
+        .legendText  {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  
+}

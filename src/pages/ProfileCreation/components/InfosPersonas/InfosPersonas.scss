@@ -1,0 +1,32 @@
+@import "assets/scss/app.scss";
+
+.create-persona {
+  padding: 40px 80px;
+  width: 100%;
+  .create-persona-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 75px;
+  }
+  .create-persona-form {
+    max-width: 600px;
+    margin: 0 auto;
+    .form-control {
+      background-color: #e6e6e6;
+      min-height: 38px;
+    }
+    .custom-select-wrapper {
+      .custom-select__control {
+        background-color: #e6e6e6;
+      }
+      .custom-select__indicator-separator {
+        display: none;
+      }
+    }
+  }
+  .errors {
+    color: $color_error;
+    font-size: 12px;
+    margin: 4px 0 0 0;
+  }
+}

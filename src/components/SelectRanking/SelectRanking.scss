@@ -1,0 +1,56 @@
+@import "../../assets/scss/app.scss";
+
+.select-ranking{
+    .title{
+        font-size: 30px;
+        color: $color_black;
+        margin: 0 0 30px 30px;
+    }
+    .b_radius_left {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
+    }
+    .b_radius_right {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+    }
+    .myProgress{
+        height: 20px;
+        background: #d1d1d1;
+        box-shadow: none;
+        margin-bottom: 30px;
+        overflow: visible;
+        width: 100%;
+        position: relative;
+        &-bar{
+            border-top: 10px solid $color_blue;
+            border-bottom: 10px solid $color_blue;
+            box-shadow: none;
+            animation: animate-positive 2s;
+            position: relative;
+        }
+
+        &-bar::after{
+            content: "";
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background-image: url(../../assets/icons/frown.svg);
+            position: absolute;
+            border-radius: 50%;
+            z-index: 1000;
+            transform: translateY(-50%) translateX(50%);
+            right: 0;
+        }
+        &-barNoAfter{
+            border: 0px solid $color_blue;
+            border-radius: 0;
+            box-shadow: none;
+            position: relative;
+            animation: animate-positive 2s;
+            &-ful{
+                border: 10px solid $color_blue;
+            }
+        }
+    }
+}

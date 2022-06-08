@@ -1,0 +1,70 @@
+@import "../../assets/scss/app.scss";
+
+.modal-project-submit {
+  .modal-content {
+    border: none;
+    background-color: $bg_modal_project_submit;
+    min-height: 221px;
+    max-width: 396px;
+
+    .title {
+      margin: auto;
+      margin-bottom: 14px;
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: 400;
+
+      color: $color_white;
+    }
+    .content {
+      color: $color_white;
+      margin: 0 30px;
+    }
+    .button__submit {
+      width: 100px;
+      height: 32px;
+      border-radius: 2px;
+      padding: 0px;
+      margin: auto;
+      background: $color_button_submit;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 0.002em;
+        color: $color_white;
+        text-align: center;
+      }
+    }
+    .cover-btn {
+      display: flex;
+      margin: auto;
+      .button__cancel{
+        width: 100px;
+        height: 32px;
+        border-radius: 2px;
+        padding: 0px;
+        margin: auto;
+        background:#cacfca;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-right: 20px;
+  
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 0.002em;
+          color: $color_black;
+          text-align: center;
+        }      }
+    }
+  }
+}

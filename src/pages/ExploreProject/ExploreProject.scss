@@ -1,0 +1,44 @@
+@import "../../assets/scss/app.scss";
+
+.explore {
+  padding: 50px;
+  &-title-top {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &-title-bottom {
+    padding: 54px 0 28px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  &-project-page {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    align-items: center;
+    padding-right: 30px;
+    button {
+      background: #ccc;
+      padding: 5px 10px;
+      margin: 1px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      position: relative;
+      border-radius: 3px;
+      transition: 0.3s;
+      border: none;
+      &:hover {
+        background: #adadad;
+        transition-duration: 0.3s;
+      }
+    }
+    span {
+      font-size: 15px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  }
+}

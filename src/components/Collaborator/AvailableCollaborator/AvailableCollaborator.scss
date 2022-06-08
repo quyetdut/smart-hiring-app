@@ -1,0 +1,51 @@
+@import "assets/scss/app.scss";
+.available-collaborator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 250px;
+  height: 80px;
+
+  border: 1px solid $color_gray_plus;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  margin-right: 40px;
+  margin-bottom: 30px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 9;
+    padding-left: 27px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    width: 80%;
+
+    &__name {
+      color: $color_text;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &__job {
+      color: $color_project_completion_text;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  &-icon {
+    flex: 1;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+  }
+}

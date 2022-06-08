@@ -1,0 +1,228 @@
+@import "../../assets/scss/app.scss";
+
+
+.custom-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  cursor: pointer;
+
+  @include md-homepage-width {
+    width: 349px;
+  }
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: 7px 8px 15px rgba(0, 0, 0, 0.25);
+  }
+  .topCard {
+    display: flex;
+    align-items: center;
+    // margin-top: 25px;
+
+    .image-project {
+      width: 70px;
+      height: 70px;
+      // margin-right: 14px;
+      // margin-left: 20px;
+      
+      @include md-homepage-width {
+        width: 70px;
+        height: 70px;
+        margin-left: 24px;
+      }
+    }
+
+    .topRight {
+      margin-left: 5%;
+
+      .project-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: color_black_title;
+        letter-spacing: 0;
+
+        @include md-homepage-width {
+          font-size: 18px;
+        }
+      }
+
+      .project-time {
+        margin-top: 15px;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        .project-time-clock {
+          width: 18px;
+          height: 18px;
+        }
+
+        .clock-text {
+          margin-left: 9px;
+        }
+      }
+    }
+    
+  }
+
+  .middleCard {
+    margin-top: 28px; 
+    // margin-left: 24px;
+
+    .collaboration-score {
+      display: flex;
+      flex-direction: column;
+
+      .collaboration-score-text {
+        margin-left: 2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #6A6B70;
+
+        @include md-homepage-width {
+          font-size: 18px;
+        }
+      }
+
+      .collaboration-score-progress {
+        margin-top: 14px;
+
+        .progress {
+          height: 10px !important;
+          width: 100% !important;
+          background-color: $color_bg_progress;
+
+          @include md-homepage-width {
+            width: 290px !important;
+          }
+
+          .progress-bar {
+            background-color: $color_progress;
+          }
+        }
+      }
+      
+    }
+
+    .candidate-statistic {
+      margin-top: 19px;
+      margin-bottom: 36px;
+      letter-spacing: 0;
+
+      .job-wrapper {
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        .job-color {
+          height: 20px;
+          width: 20px;
+
+          &-ui_ux {
+            background-color: $ui_ux;
+          }
+
+          &-cryptographer {
+            background-color: $cryptographer;
+          }
+
+          &-web {
+            background-color: $web;
+          }
+
+          &-solution_architect{
+            background-color: $solution_architect;
+          }
+
+          &-creation_director {
+            background-color: $creation_director;
+          }
+
+          &-illustrator {
+            background-color: $illustrator;
+          }
+
+          &-product_owner {
+            background-color: $product_owner;
+          }
+        }
+
+        .job-name {
+          margin-left: 4%;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          /* identical to box height */
+          color: $color_job;
+
+          @include md-homepage-width {
+            font-size: 14px;
+          }
+        }
+
+        .job-match {
+          margin-left: auto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          /* identical to box height */
+          color: $color_job;
+
+          @include md-homepage-width {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomCard {
+    margin-top: auto;
+    // margin-left: 24px;
+    // margin-bottom: 40px;
+    .project-completion {
+      display: flex;
+      flex-direction: column;
+
+      .project-completion-text {
+        margin-left: 2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: $color_project_completion_text;
+
+        @include md-homepage-width {
+          font-size: 18px;
+        }
+      }
+
+      .project-completion-progress {
+        margin-top: 14px;
+
+        .progress {
+          height: 10px !important;
+          width: 100% !important;
+          background-color: $color_bg_progress;
+
+          @include md-homepage-width {
+            width: 290px !important;
+          }
+          .progress-bar {
+            background-color: $color_blue;
+          }
+        }
+      }
+    }
+  }
+} 

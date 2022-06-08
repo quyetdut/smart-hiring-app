@@ -1,0 +1,36 @@
+@import "../../../../assets/scss/foundation/variable/variable";
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
+  margin-bottom: 25px;
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.sliderContainer {
+  padding: 0 20px;
+
+  .slider {
+    width: 100%;
+  }
+
+  .sliderInfo {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+
+    span {
+      font-size: 18px;
+      transition: all 0.4s;
+
+      &.active {
+        color: currentColor;
+        font-weight: 600;
+      }
+    }
+  }
+}

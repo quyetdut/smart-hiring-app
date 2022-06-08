@@ -1,0 +1,18 @@
+@import "../../assets/scss/app.scss";
+
+.project-info {
+  margin-bottom: 32px;
+  .back-all-project {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 23px;
+    color: $color_project_completion_text;
+  }
+  &-title {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    color: $color_font_base;
+  }
+}

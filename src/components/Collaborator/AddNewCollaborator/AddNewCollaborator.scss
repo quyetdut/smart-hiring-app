@@ -1,0 +1,37 @@
+@import "assets/scss/app.scss";
+.add-new-collaborator {
+  width: 250px;
+  height: 80px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-right: 40px;
+  margin-bottom: 30px;
+
+  &-icon {
+    cursor: pointer;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: $color_font_base;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+  }
+}

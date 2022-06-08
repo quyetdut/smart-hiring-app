@@ -1,0 +1,202 @@
+@import "../../../../../assets/scss/app.scss";
+
+.personasComponent {
+
+  .personas__title {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;  
+    color: $color_font_base;
+  }
+
+  .personas__progress {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+
+    .progress__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: $color_project_completion_text;
+    }
+
+    .progress__bar {
+      flex: 1;
+      max-width: 791px;
+      margin-left: 10px;
+    }
+  }
+
+  .personas__content {
+
+    .iconsWrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .polygonIcon {
+        margin-left: 7px;
+      }
+      
+    }
+
+    .content__wrapper {
+      margin-left: 16px;
+      margin-right: 18px;
+      /* Line CECFD0 */
+      border: 1px solid $color_border_subComponent_projectHealth;
+      box-sizing: border-box;
+      border-radius: 2px;
+
+      .personasContent__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 14px;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $color_border_subComponent_projectHealth;
+
+        @include mobile {
+          flex-wrap: wrap;
+        }
+
+        .top__baseInfor {
+          flex: 1;
+          min-width: 230px;
+          display: flex;
+          align-items: center;  
+
+          .baseInfor__leftAvatar {
+            height: 60px;
+            width: 60px;        
+          }
+
+          .baseInfor__rightText {
+            margin-left: 21px;
+            display: flex;
+            flex-direction: column;
+
+            .rightText__title {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 26px;
+              color: $color_font_base;
+            }
+
+            .rightText__date {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 26px;
+              color: $color_font_base;
+            }
+
+            .rightText__alert {
+              display: flex;
+              align-items: center;
+              margin-left: -10px;
+
+              .alert__icon {
+                height: 22px;
+                width: 26px;
+              }
+
+              .alert__text {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 26px;
+                color: $color_primary;
+              }
+            }
+          }
+        }
+
+        .top__match {
+          // flex: 1;
+          text-align: center;
+        
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 160%;
+          /* or 35px */
+        
+          color: $color_black;
+        }
+
+        .top__edit {
+          min-width: 24px;
+          flex: 1;
+          text-align: end;
+        }
+      }
+
+      .personasContent__bottom {
+        padding-top: 15px;
+        padding-bottom: 28px;
+
+        .potentialMatch {
+          display: flex;
+
+          .potentialMatch__leftIcon {
+            flex: 6;
+            text-align: end;
+
+            .HumanGroupIcon {
+              height: 80px;
+              width: 80px;
+            }
+          }
+
+          .potentialMatch__rightText {
+            flex: 8;
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            margin-left: 15px;
+            .rightText__title {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 26px;
+              color: $color_font_base;
+              margin-bottom: 15px;
+              padding-top: 8px;
+            }
+
+            .rightText__text {
+              font-size: 18px;
+              line-height: 26px;
+              color: $color_font_base;
+              margin-bottom: 30px;
+            }
+
+            .seeMore__buton {
+              width: 100px;
+              padding: 4px 18px 4px 19px;
+              border: none;
+              color: $color_white;
+              background: $color_primary;
+              border-radius: 2px;
+    
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.002em;
+            }
+          }
+        }
+
+        
+        
+      }
+    }
+  }
+}

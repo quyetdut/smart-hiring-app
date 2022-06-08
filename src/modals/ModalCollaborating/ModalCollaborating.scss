@@ -1,0 +1,41 @@
+@import "../../assets/scss/app.scss";
+
+.modal-collaborating {
+  max-width: 910px !important;
+  .modal-content {
+    background: none;
+    border: none;
+    min-height: 378px !important;
+  }
+  .modal-body {
+    background-color: $color_font_base;
+    color: $color_white;
+    .ctn-collab {
+      font-size: 14px;
+      line-height: 160%;
+      .ctn {
+        margin-top: 130px;
+      }
+      .button_submit {
+        width: 133px;
+        height: 27px;
+        border-radius: 2px;
+        padding: 0px;
+        margin: auto;
+        margin-top: 26px;
+        background: $color_button_submit;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        p {
+          font-size: 12px;
+          margin: 0;
+          color: $color_white;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

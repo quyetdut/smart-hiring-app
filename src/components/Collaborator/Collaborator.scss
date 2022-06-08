@@ -1,0 +1,38 @@
+@import "assets/scss/app.scss";
+
+.collaborator {
+  &-title {
+    width: 229px;
+    height: 27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+
+    margin-bottom: 50px;
+  }
+
+  &-body {
+    // max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-left: 30px;
+
+    @include desktop {
+      padding-left: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .collaborator-body {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: $mobile-width) {
+  .collaborator-body {
+    padding-left: 10px;
+  }
+}

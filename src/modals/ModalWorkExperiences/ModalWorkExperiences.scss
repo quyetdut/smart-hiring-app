@@ -1,0 +1,213 @@
+@import "../../assets/scss/app.scss";
+
+.workexperiences-wrapper {
+  .workexperiences {
+    &-style {
+      margin: 0 auto;
+    }
+    &-content {
+      margin: 0 auto;
+      background-color: $color_blue_dark;
+      // height: 100vh;
+    }
+    &-heading {
+      display: flex;
+      flex-direction: "row";
+      justify-content: space-between;
+    }
+    &-title {
+      padding-top: 43px;
+      padding-left: 38px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 38.4px;
+      color: $color_white;
+    }
+    &-close {
+      cursor: pointer;
+      font-size: 20px;
+      color: $color_white;
+      margin-top: 71px;
+      margin-right: 58px;
+      > div {
+        width: 40px;
+        height: 0.5px;
+        background-color: $bg_input_ex;
+      }
+      .close-1 {
+        transform: rotate(45deg);
+      }
+      .close-2 {
+        transform: rotate(135deg);
+      }
+    }
+    &-close:hover {
+      > div {
+        background-color: $color_light_gray;
+      }
+    }
+    &-form {
+      &__list {
+        max-width: 676px;
+        padding: 0 38px;
+        margin: 0 auto;
+        margin-top: 45.49px;
+        max-height: 615px;
+        // min-height: 580px;
+        // overflow: auto;
+        div:last-child {
+          margin-bottom: 0px;
+        }
+      }
+      &__list::-webkit-scrollbar {
+        width: 4px;
+      }
+      &__list::-webkit-scrollbar-thumb {
+        background-color: $color_blue;
+        border-radius: 100px;
+      }
+      &__list::-webkit-scrollbar-track {
+        background-color: $color_black_title;
+      }
+    }
+    &-btn__next {
+      cursor: pointer;
+      text-align: center;
+      height: 32px;
+      width: 100px;
+      border-radius: 2px;
+      margin: 0 auto;
+      padding-top: 4px;
+      margin-top: 53px;
+      color: $color_white;
+      background: $color_button_submit;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      border: 0;
+      display: block;
+    }
+    &-btn__next:hover {
+      opacity: 0.5;
+    }
+  }
+  .workexperiences-from__item {
+    margin-bottom: 72px;
+  }
+  .form-group {
+    margin-bottom: 26px;
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $color_white;
+      margin-bottom: 4px;
+    }
+    .form-control {
+      height: 40px;
+      padding: 7px 16px;
+      background-color: $bg_input_ex;
+    }
+    .form-control::placeholder {
+      font-size: 15px;
+      font-weight: 400;
+      color: $color_black;
+    }
+  }
+
+  // form
+  .form-item-from-to {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > div {
+      width: 135px;
+    }
+    .from-input {
+      position: relative;
+    }
+    .icon-down {
+      cursor: pointer;
+      position: absolute;
+      top: 38px;
+      font-size: 10px;
+      right: 17.48px;
+      color: $color_text;
+      z-index: 10;
+    }
+  }
+  .to-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > div {
+      width: 290px;
+    }
+  }
+  .add-another-experience {
+    margin-top: -51px;
+    display: flex;
+    flex-direction: row;
+    color: $color_blue;
+    cursor: pointer;
+    > span {
+      margin-left: 26px;
+    }
+  }
+  .add-another-experience:hover {
+    opacity: 0.5;
+  }
+  .add-another-experience:hover .plus-group {
+    > div {
+      opacity: 0.5;
+    }
+  }
+  // plus group
+  .plus-group {
+    position: relative;
+    > div {
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 16px;
+      height: 1.6px;
+      background-color: $color_blue;
+    }
+    &__vertical {
+      transform: rotate(90deg);
+    }
+  }
+  .errors {
+    color: $color_error;
+    font-size: 12px;
+    margin: 4px 0 0 0;
+  }
+
+  .date-picker-calendar {
+    input {
+      background-color: #c4c4c4;
+    }
+  }
+}
+@media screen and (max-width: $desktop-width) {
+  .workexperiences-wrapper {
+    .to-group {
+      display: flex;
+      flex-direction: column;
+      > div {
+        width: 100%;
+      }
+    }
+    .form-item-from-to {
+      display: flex;
+      flex-direction: column;
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
+.workexperiences-modal-body {
+  background-color: $color_blue_dark !important;
+}

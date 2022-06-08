@@ -1,0 +1,107 @@
+@import "../../assets/scss/foundation/variable/variable";
+
+.modal-capabilities {
+  color: $color_bg_content;
+
+  &-style {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &-content {
+    background-color: #282830;
+    color: $color_bg_content;
+    h4 {
+      font-size: 24px;
+      color: $color_white;
+    }
+
+    .btn-primary {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      &:focus {
+        box-shadow: 0 0 0 transparent;
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      &:active {
+        background-color: transparent !important;
+        border-color: transparent !important;
+      }
+
+      &:focus:active {
+        box-shadow: 0 0 0 0.2rem $color_orange !important;
+      }
+    }
+  }
+
+  &-title {
+    margin: 30px 0px 0px 20px !important;
+  }
+
+  &-button {
+    background: $color_button_submit;
+    color: $color_white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 2px;
+
+    &-close {
+      line-height: 28px;
+      color: $color_border;
+      background-color: transparent;
+      border: none;
+      font-size: 3rem;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &-selections {
+    margin-bottom: 100px;
+    margin-top: 55px;
+    .css-n9lsfx-menu {
+      background-color: #282830;
+    }
+  }
+
+  &-group {
+    .label-capability {
+      text-align: right;
+      font-size: 20px;
+      @media only screen and (max-width: $sm-width) {
+        text-align: center;
+      }
+    }
+
+    ol,
+    ul {
+      padding-left: 0px;
+    }
+
+    .btn-subtraction {
+      line-height: 0px;
+    }
+
+    .btn-summation {
+      transform: translate(0px, -5px);
+      @media only screen and (max-width: $sm-width) {
+        transform: translate(0px, 5px);
+      }
+    }
+
+    .ctn-item {
+      transform: translate(0px, 8px);
+    }
+
+    .capability-point {
+      font-size: 20px;
+      transform: translate(0px, -2px);
+      @media only screen and (max-width: $sm-width) {
+        display: none;
+      }
+    }
+  }
+}

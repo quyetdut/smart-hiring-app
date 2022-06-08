@@ -1,0 +1,18 @@
+.modal-contents {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0px 5px;
+
+  &__statistics {
+    margin-bottom: 140px;
+  }
+
+  &__chart {
+    max-width: 800px;
+    margin: 0px auto;
+    margin-bottom: 85px;
+
+    display: flex;
+    justify-content: center;
+  }
+}

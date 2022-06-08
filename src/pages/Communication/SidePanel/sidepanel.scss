@@ -1,0 +1,85 @@
+@import "../../../assets/scss/app.scss";
+
+.sidepanel {
+  min-width: 58px;
+  width: 275px;
+  height: 100%;
+  background: $color_bg_chat;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px solid $color_border_chat;
+  flex-shrink: 0;
+  .no-contacts {
+    text-align: center;
+    margin-top: 100%;
+  }
+  .contacts {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    ul {
+      li.contact {
+        position: relative;
+        padding: 10px;
+        font-size: 0.9em;
+        cursor: pointer;
+        &:hover {
+          background: $color_msg_rep;
+        }
+        .wrap {
+          // width: 88%;
+          // margin: 0 auto;
+          display: flex;
+          .avatar {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+            flex-shrink: 0;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .meta {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .left {
+              flex-grow: 1;
+              .name,
+              .preview {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                // width: 200px;
+              }
+              .name {
+                font-size: 16px;
+              }
+              .preview {
+                padding: 0 0 1px;
+                font-size: 14px;
+              }
+            }
+            .unread{
+              border: 1px solid green;
+              border-radius: 5px;
+            }
+            
+          }
+        }
+        &:active {
+          background: $color_chat_item_hover;
+        }
+      }
+      li.contact.active {
+        background: $color_chat_item_hover;
+      }
+    }
+  }
+}

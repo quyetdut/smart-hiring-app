@@ -1,0 +1,74 @@
+@import "../../../assets/scss/app.scss";
+
+.project-preview {
+  width: 100%;
+  padding: 100px 0px 0px 10px;
+
+  &-btn {
+    position: fixed;
+    top: 60px;
+    right: 90px;
+    z-index: 100;
+
+    width: 100px;
+    height: 32px;
+
+    &__submit {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 2px;
+
+      background: $color_button_submit;
+
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $color_white;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    @include desktop {
+      top: 30px;
+      right: 45px;
+    }
+  }
+
+  &-title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-bottom: 45px;
+
+    color: $color_font_base;
+  }
+
+  &-infor {
+    margin-bottom: 50px;
+  }
+  &-purposePitch {
+    margin-bottom: 80px;
+  }
+  &-targetOperating {
+    margin-bottom: 50px;
+  }
+  &-personas {
+    margin-bottom: 35px;
+  }
+  &-collaborators {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: $tablet-width) {
+  .project-preview {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: $mobile-width) {
+  .project-preview {
+    padding-left: 0px;
+  }
+}

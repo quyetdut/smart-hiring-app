@@ -1,0 +1,44 @@
+@import "assets/scss/app.scss";
+
+.purpose-pitch-item {
+  &-wrapper {
+    // max-width: 1000px;
+    border: 1px solid $color_border_purpose_pitch;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 40px 0px;
+
+    &-content {
+      flex: 9;
+      &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 15px;
+        color: $color_text;
+        padding: 30px 0px 24px 40px;
+      }
+      &__description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color_project_completion_text;
+        padding: 0px 0px 24px 40px;
+      }
+    }
+    &-edit-button {
+      flex: 1;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 10px 0px 0px;
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}

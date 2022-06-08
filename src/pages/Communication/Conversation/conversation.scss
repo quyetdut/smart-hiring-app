@@ -1,0 +1,121 @@
+@import "../../../assets/scss/app.scss";
+
+.conversation {
+  height: 616px;
+  min-width: 100%;
+  max-height: calc(100% - 185px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .timestamp {
+    font-size: 10px;
+    width: 107px;
+    height: 24px;
+    background: $color_type_msg;
+    border-radius: 100px;
+    margin: 28px auto 0 auto;
+    padding: 5px 14px;
+    text-align: center;
+  }
+  ul {
+    margin-right: 3%;
+    margin-left: 3%;
+    li {
+      display: inline-block;
+      clear: both;
+      margin: 15px 15px 5px 15px;
+      width: calc(100% - 25px);
+      &:nth-last-child(1) {
+        margin-bottom: 20px;
+      }
+      img {
+        width: 40px;
+        float: left;
+      }
+      .ctn-msg {
+        margin-top: 24px;
+      }
+      .message-text,
+      .message-collab {
+        display: inline-block;
+        padding: 10px 15px;
+        max-width: fit-content;
+        font-size: 14px;
+        line-height: 24px;
+        //Handel long URL
+        word-wrap: break-word;
+        word-break: break-word;
+      }
+      .message-collab {
+        background: $color_msg_collab;
+        width: fit-content;
+        color: #f5f5f5;
+        letter-spacing: 0.002em;
+      }
+      .mesage-collab-dev {
+        background: $color_msg_collab_dev;
+      }
+      .message-collab {
+        .ctn-img {
+          display: inline-block;
+          align-items: center;
+        }
+        .collab-success-icon {
+          width: 16px;
+          height: 12px;
+          margin-top: 38px;
+        }
+        .collab-icon {
+          width: 60px;
+          height: 60px;
+          margin: 0;
+        }
+      }
+      .infor {
+        font-size: 12px;
+        line-height: 17px;
+        color: $bg_gray_text;
+        margin-bottom: 9px;
+      }
+    }
+    li.replies {
+      .ctn-msg {
+        margin-left: 45px;
+      }
+      img {
+        margin: 6px 8px 0 0;
+      }
+      .message-text {
+        background: $color_msg_rep;
+        border-radius: 0px 10px 10px 10px;
+      }
+      .message-collab {
+        border-radius: 0px 10px 10px 10px;
+      }
+    }
+    li.sent {
+      .ctn-msg {
+        padding-right: 55px;
+      }
+      .infor {
+        text-align: right;
+      }
+      img {
+        float: right;
+        margin: 6px 0 0 8px;
+      }
+      .message-text {
+        background: $color_msg_sent;
+        color: #f5f5f5;
+        float: right;
+        border-radius: 10px 0 10px 10px;
+      }
+      .message-collab {
+        float: right;
+        border-radius: 10px 0px 10px 10px;
+      }
+    }
+  }
+}

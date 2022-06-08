@@ -1,0 +1,12 @@
+@import "assets/scss/app.scss";
+@import "src/components/BaseProfile/BaseProfile.scss";
+
+.general-information {
+  padding: 50px;
+  width: 100%;
+
+  &-title {
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
