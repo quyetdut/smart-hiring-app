@@ -78,22 +78,22 @@ const Badges = ({ certificationsProp, profileId }) => {
         certificationSelected={certificationSelected}
         handleRemoveCertification={handleRemoveCertification}
       />
-      <div className="badges-header">Badges</div>
+      <div className="badges-header">Certifications</div>
       <div className="badges-wrapper">
         <div className="certifications">
-          <div className="certifications-title">Certifications</div>
+          {/* <div className="certifications-title"></div> */}
           <div className="certifications-description">{content}</div>
         </div>
         <div className="community">
           <div className="vertical-line"></div>
           <div className="community-wrapper">
-            <div className="community-title">Community</div>
+            <div className="community-title">Add your Certification</div>
             <div className="community-icon" onClick={() => toggleForAdd()}>
               <img src={communityIcon} alt="communityicon" />
             </div>
-            <div className="community-description">Newcomer</div>
           </div>
         </div>
+        {/* <div className="community-description">Description</div> */}
       </div>
     </div>
   );

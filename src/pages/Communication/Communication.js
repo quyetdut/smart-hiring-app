@@ -108,7 +108,7 @@ const Communication = () => {
             </>
           ) : (
             <>
-              <div className="no-content">Welcome to connect everyone!</div>
+              <h5 className="no-content">You have contacted no one yet!</h5>
             </>
           )}
         </div>

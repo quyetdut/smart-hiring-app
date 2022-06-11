@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "assets/images/logo_smd.svg";
+import logo from "assets/images/icons/favicon.ico";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "store/user";

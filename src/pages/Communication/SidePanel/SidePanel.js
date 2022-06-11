@@ -50,7 +50,7 @@ const SidePanel = ({ contacts, selectUser }) => {
   return (
     <div className="sidepanel">
       {!contacts.length ? (
-        <div className="no-contacts">No contacts to chat...</div>
+        <div className="no-contacts"></div>
       ) : (
         <div className="contacts">
           <ul>
