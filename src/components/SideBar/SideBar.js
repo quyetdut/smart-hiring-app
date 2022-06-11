@@ -135,8 +135,16 @@ const SideBar = () => {
           </ul>
         </div>
         <div className="sidebar-footer">
-          <div className="d-flex align-items-center justify-content-between">
-            <span className="mr-2 user-name">{user?.name?.toUpperCase()}</span>
+          <div
+            className="align-items-center"
+            style={{
+              display: "flex",
+              justifyContent: "space-evenly",
+              width: "100%",
+              margin: 0
+            }}
+          >
+            <span className="mr-2 user-name">{user?.name}</span>
             <i className="fas fa-sign-out-alt" onClick={() => onLogOut()}></i>
           </div>
         </div>

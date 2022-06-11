@@ -50,6 +50,7 @@ const ProjectMatching = ({
   matchingScore
 }) => {
   const { user } = useSelector((state) => state.user);
+  console.log("quyet", collabStatus);
   //Change css of collab button with collabstatus
   if (collabStatus?.status === 2) {
     var buttonCollab = "btn-collab collaborating";

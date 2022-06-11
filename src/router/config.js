@@ -86,7 +86,7 @@ export const routeConfig = [
     path: "/my-profile/:profileId",
     isPrivate: true,
     exact: true,
-    role: USER_ROLE.DEVELOP,
+    // role: USER_ROLE.DEVELOP,
     component: MyProfile
   },
   {

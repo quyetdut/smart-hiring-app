@@ -13,7 +13,7 @@ export default function useMemberToRadarChart(
 
   const getMemberToRadarChart = async () => {
     const res = await http.get(
-      `/persona/profiles//get-persona-users-detail?projectId=${projectId}&positionId=${position?.id}&interestingStatus=${statusConvert}`
+      `/persona/profiles/get-persona-users-detail?projectId=${projectId}&positionId=${position?.id}&interestingStatus=${statusConvert}`
     );
     setMembers(res.data.member);
   };
