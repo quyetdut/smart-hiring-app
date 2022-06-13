@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBfCgBSD2za-CZKNJx1AL4msh2jSTZ_9R8",
-  authDomain: "iresource-local.firebaseapp.com",
-  projectId: "iresource-local",
-  storageBucket: "iresource-local.appspot.com",
-  messagingSenderId: "338857511975",
-  appId: "1:338857511975:web:92aad071dae083cf55d202",
-  measurementId: "G-2ZRVYDB243"
+  apiKey: "AIzaSyCmut0pfJriZPVOeofhf9dUgdGeXkxP63Q",
+  authDomain: "smart-hiring.firebaseapp.com",
+  databaseURL: "https://smart-hiring-default-rtdb.firebaseio.com",
+  projectId: "smart-hiring",
+  storageBucket: "smart-hiring.appspot.com",
+  messagingSenderId: "803074135969",
+  appId: "1:803074135969:web:639a666e73d745d4461de0"
 };
 
 // Initialize Firebase

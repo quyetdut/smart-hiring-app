@@ -50,7 +50,6 @@ const ProjectMatching = ({
   matchingScore
 }) => {
   const { user } = useSelector((state) => state.user);
-  console.log("quyet", collabStatus);
   //Change css of collab button with collabstatus
   if (collabStatus?.status === 2) {
     var buttonCollab = "btn-collab collaborating";
@@ -145,6 +144,7 @@ const MatchingHeader = ({ toggle, setCollab, isCollab, currentContact }) => {
         });
     })();
   }, []);
+
   useEffect(() => {
     let collabRef = doc(db, "collaboration", id);
     const unsub = onSnapshot(collabRef, (doc) => {
@@ -152,6 +152,7 @@ const MatchingHeader = ({ toggle, setCollab, isCollab, currentContact }) => {
     });
     return () => unsub();
   }, []);
+
   const acceptCollaborate = async () => {
     let content = "";
     if (user.roles[0] === USER_ROLE.PROJECT_OWNER) {
